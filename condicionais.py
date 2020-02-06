@@ -21,3 +21,17 @@ if sexo == 'M' or  sexo == 'F' or sexo == 'O':
     print ('Informação válida')
 else:
     print ('Informação inválida')
+    
+# Escreva um programa que peça a nota de 3 provas de um aluno, e verifique 
+# se ele passou o não de ano:  Obs: O aluno irá passar de ano se sua média for maior que 6.
+
+prova1= float(input('Digite a nota da primeira prova: '))
+prova2= float(input('Digite a nota da segunda prova: '))
+prova3= float(input('Digite a nota da terceira prova: '))
+somaprovas= (prova1 + prova2 + prova3)
+notafinal= (somaprovas / 3)
+if notafinal >= 6:
+    print ('Você foi aprovado')
+else:
+    notafinal < 6
+    print ('Você foi reprovado')
