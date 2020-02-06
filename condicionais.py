@@ -2,6 +2,7 @@
 # a. Idade: entre 0 e 150 
 # b. Salário: maior que 0
 # c. Sexo: M, F ou Outro
+
 idade= int(input('Qual a sua idade?'))
 if idade > 0 and idade <= 150:
     print('Informação válida')
@@ -35,3 +36,19 @@ if notafinal >= 6:
 else:
     notafinal < 6
     print ('Você foi reprovado')
+ 
+#Questão de múltipla escolha. Da pra programar uma prova digtal inteira assim. Aqui tomei o cuidade de deixar entre aspas as letras
+#de opção de resposta para que o usuário não precise escrever a respota inteira e sim apenas a letra escolhida. 
+
+print ('Dentro as alternativas marque a correta: ')
+print ('a',' - Cabral descobriu o Brasil')
+print ('b','- Joaõzinho descobriu o Brasil')
+print ('c','- Spider descobriu o Brasil')
+print ('d','- Colombo descobriu o Brasil')
+print ('e','- Todos descobriram, pois estavam juntos')
+resposta = input('Marque aqui sua reposta: ')
+print (resposta)
+if resposta == ('a'):
+    print ('Resposta exata')
+else:
+    print ('Resposta errada')
