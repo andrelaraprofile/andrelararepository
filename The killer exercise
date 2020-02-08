@@ -1,0 +1,40 @@
+#Let's do a program to find out who the murderer of a crime is. To discover a police assembled on one of the suspects and a 
+small questionnaire with 5 yes or no questions:
+
+print ('Please answer the questionary with yes or no ')
+a= input('Did you call to victim? ')
+b= input('Has been in the crime location? ')
+c= input('Lived near the victim? ')
+d= input('Did you had owed to the victim? ')
+e= input('Did you worked eoth the victim? ')
+if 'yes' == a:
+        a = (1)
+else:
+        a = (0)
+if 'yes' == b:
+        b = (1)
+else:
+        b = (0)
+if 'yes' == c:
+        c = (1)
+else:
+        c = (0)
+if 'yes' == d:
+        d = (1)
+else:
+        d = (0)
+if 'yes' == e:
+        e = (1)
+else:
+        e = (0)
+result= (a+b+c+d+e)
+if result == (5):
+    print('You are the killer')
+if result == (4):
+    print('You are accomplice')
+if result == (3):
+    print('You are accomplice ')
+if result == (2):
+    print('You are suspect')
+if result == (1):
+    print('You are released')
