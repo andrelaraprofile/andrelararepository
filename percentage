@@ -1,0 +1,35 @@
+#Product´s prices will increase. When the user write the old price give him a answer about the new price: cheap, reasonable, 
+expensive or very expensive. Schedule percentage calculations for new prices.
+
+print ('The prices of the products will increase')
+print ('Price´s update: US$50 + 5%, Between US$51 to US$100 + 10%,')
+print ('Between US$101 to US$150 + 13%, Over US$150 + 15%.')
+oldprice1 = 50
+oldprice2 = 51, 100 
+update = float(input('Write here the old price to know the new price: '))
+if update <= 50:
+    update = update + ((update*5)/100)
+elif update >51:
+    update = update + ((update * 10) / 100)
+elif update <100:
+    update = update + ((update * 10) / 100)
+elif update >100:
+    update = update + ((update * 13) / 100)
+elif update <150:
+    update = update + ((update * 13) / 100)
+elif update >150:
+    update = update + ((update * 15) / 100)
+result = (update)
+if result <80:
+    print('cheap')
+elif result <115:
+    print ('reasonable')
+elif result <150:
+    print ('Normal')
+elif result <170:
+    print ('Expensive')
+else:
+    print ('Very expensive')
+
+#OBS: Remember the parameters cannot be redundant.
+
