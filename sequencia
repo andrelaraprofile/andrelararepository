@@ -1,0 +1,7 @@
+#Peça ao usuário um número, e imprima todos os números de um ao  número dado:   Exemplo: digite: 5 imprime: 1 2 3 4 5
+
+sequencia = int(input('Digite um número para obter a sequência: '))
+n = 0
+while sequencia >= n:
+    print(n)
+    n = (n + 1)
