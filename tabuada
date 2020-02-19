@@ -1,0 +1,7 @@
+# Peça ao usuário um número e execute a tabuada.
+
+numero= int(input('Digite um número: '))
+n = 0
+while n < numero*10:
+    n = (n + numero)
+    print(n)
