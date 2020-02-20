@@ -1,0 +1,8 @@
+#Este programa permite ao usuário obter todos os divisores de um número escolhido.  
+
+numero= int(input('Digite um número para saber seus divisores: '))
+n= 0
+while n < numero:
+    n= (n + 1)
+    if numero % n == 0:
+        print (n)
