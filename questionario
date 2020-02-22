@@ -1,0 +1,14 @@
+# Faça um programa que peça para o usuário digitar a idade, o salário e o  sexo
+# até que as entradas digitadas sejam válidas 
+
+idade = int(input('Digite sua idade: '))
+while idade < 0 or idade > 120:
+    idade = int(input('Digite sua idade: '))
+salario = float(input('Digite seu salário: '))
+while salario < 999:
+    salario = float(input('Digite seu salário: '))
+sexo = input('Digite seu sexo com M ou F: ')
+while sexo != 'M' and sexo != 'F':
+    sexo = input('Digite seu sexo com M ou F: ')
+else:
+    print ('Você completou o dicionário.')
